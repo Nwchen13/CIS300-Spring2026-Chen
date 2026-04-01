@@ -1,0 +1,263 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: gray;
+  color: purple;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 2px solid #4f4f4f;
+  background-color: lightgreen;
+}
+
+.site-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  border: 2px solid #4f4f4f;
+  background-color: lightblue;
+}
+
+/* BLUE TO YELLOW GRADIENT TITLES */
+.logo,
+.hero-header h1,
+.hero-overlay h2,
+.about-text h2,
+.summary-section h2,
+.site-footer h2 {
+  background: linear-gradient(90deg, blue 0%, gold 100%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+/* NAVIGATION */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 20px;
+  border-bottom: 2px solid #4f4f4f;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  display: inline-block;
+  text-decoration: none;
+  color: purple;
+  border: 2px solid #4f4f4f;
+  background-color: #d9f3ff;
+  padding: 10px 18px;
+  font-size: 1rem;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.nav-links a:hover {
+  background-color: #a8e6a3;
+  color: purple;
+}
+
+/* HEADER */
+.hero-header {
+  text-align: center;
+  padding: 18px;
+  border-bottom: 2px solid #4f4f4f;
+}
+
+.hero-header h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  font-weight: bold;
+}
+
+/* HERO IMAGE */
+.hero-image {
+  position: relative;
+  border-bottom: 2px solid #4f4f4f;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-overlay h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ABOUT SECTION */
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 35px 30px;
+  border-bottom: 2px solid #4f4f4f;
+}
+
+.selfie-box {
+  flex: 0 0 180px;
+}
+
+.selfie-box img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border: 2px solid #4f4f4f;
+  border-radius: 50%;
+  display: block;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 2.4rem;
+  margin-bottom: 14px;
+}
+
+.about-text p {
+  margin-bottom: 14px;
+  max-width: 700px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #5f5f5f;
+  color: purple;
+}
+
+/* SUMMARY */
+.summary-section {
+  padding: 35px 30px 45px;
+  border-bottom: 2px solid #4f4f4f;
+}
+
+.summary-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+}
+
+.summary-section p {
+  max-width: 900px;
+  margin: 0 auto 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #5f5f5f;
+  color: purple;
+}
+
+/* FOOTER */
+.site-footer {
+  text-align: center;
+  padding: 28px 20px;
+}
+
+.site-footer h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.site-footer p {
+  font-size: 1rem;
+  margin: 3px 0;
+  color: purple;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    width: 100%;
+  }
+
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text p {
+    max-width: 100%;
+  }
+
+  .hero-header h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero-overlay h2 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-wrapper {
+    padding: 12px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links li,
+  .nav-links a {
+    width: 100%;
+  }
+
+  .nav-links a {
+    text-align: center;
+  }
+
+  .hero-image img {
+    height: 260px;
+  }
+
+  .hero-overlay h2 {
+    font-size: 2rem;
+  }
+
+  .about-text h2,
+  .summary-section h2,
+  .site-footer h2 {
+    font-size: 1.8rem;
+  }
+}
