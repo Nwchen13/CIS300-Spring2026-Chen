@@ -27,7 +27,6 @@ body {
   background-color: lightblue;
 }
 
-/* BLUE TO YELLOW GRADIENT TITLES */
 .logo,
 .hero-header h1,
 .hero-overlay h2,
@@ -44,7 +43,6 @@ body {
   display: inline-block;
 }
 
-/* NAVIGATION */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -82,7 +80,6 @@ body {
   color: purple;
 }
 
-/* HEADER */
 .hero-header {
   text-align: center;
   padding: 18px;
@@ -95,7 +92,6 @@ body {
   font-weight: bold;
 }
 
-/* HERO IMAGE */
 .hero-image {
   position: relative;
   border-bottom: 2px solid #4f4f4f;
@@ -124,7 +120,6 @@ body {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* ABOUT SECTION */
 .about-section {
   display: flex;
   align-items: center;
@@ -163,7 +158,6 @@ body {
   color: purple;
 }
 
-/* SUMMARY */
 .summary-section {
   padding: 35px 30px 45px;
   border-bottom: 2px solid #4f4f4f;
@@ -182,7 +176,6 @@ body {
   color: purple;
 }
 
-/* FOOTER */
 .site-footer {
   text-align: center;
   padding: 28px 20px;
@@ -199,7 +192,6 @@ body {
   color: purple;
 }
 
-/* RESPONSIVE */
 @media (max-width: 900px) {
   .navbar {
     flex-direction: column;
